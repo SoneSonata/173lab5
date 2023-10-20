@@ -1,0 +1,28 @@
+body{
+    background-image: url(../i/fuji.jpg);
+    background-size: cover;
+}
+
+img{
+    display: block;
+}
+
+.shrine{
+    object-fit: cover;
+}
+
+.vec{
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 767px){
+    body{
+        background-image: url(../i/fuji.webp);
+        background-position: center fixed;
+        background-repeat: no-repeat;
+        background-size: auto;
+
+        
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5: Responsive Images
+    </title>
+    <link rel="stylesheet" href="c/main.css">
+</head>
+<body>
+    <h1>Object Fit Image</h1>
+    <img src="i/shrine.webp" alt="" class="shrine">
+    <h1>Resolution Swapped Image</h1>
+    <img 
+        src="i/castle.webp"
+        srcset="i/castle300.webp 300w, i/castle600.webp 600w, i/castle900.webp 900w"
+        sizes="(max-width:700px)calc(100vw - 50px), (max-width:900px) 50vw 800px"
+        alt="" 
+    />
+    <h1>Picture</h1>
+    <picture>
+        <source
+            media="(orientation: portrait)"
+            srcset="i/train.webp"
+            sizes="(min-width: 60rem) 80vw, 
+            (min-width: 40rem) 90vw, 
+            100vw"
+        />
+        <source
+            media="(orientation: portrait)"
+            srcset="i/train.webp"
+            sizes="(min-width: 60rem) 80vw, 
+            (min-width: 40rem) 90vw, 
+            100vw"
+        />
+        <img src="i/train.webp" alt="Image description" />
+    </picture>
+
+    <h1>SVG Image</h1>
+    <img class="vec" src="i/bonsai.svg" alt="">
+    
+</body>
+</html>
